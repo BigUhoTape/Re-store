@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
 import './BookList.css';
 
 import BookListItem from "../BookListItem/BookListItem";
 
-export default class BookList extends Component{
+class BookList extends Component{
 
   render() {
     const { books } = this.props;
@@ -22,3 +23,9 @@ export default class BookList extends Component{
     );
   }
 }
+
+const mapStateToProps = ({ books }) => {
+  return { books }
+};
+
+export default connect(mapStateToProps)(BookList);
