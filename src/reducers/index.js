@@ -37,7 +37,7 @@ const reducer = (state = initialState, action) => {
       const book = state.books.find(book => book.id === bookId);
       const newItem = {
         id: book.id,
-        name: book.title,
+        title: book.title,
         count: 1,
         total: book.price
       };
