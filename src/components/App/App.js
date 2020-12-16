@@ -12,7 +12,7 @@ const App = () => {
       <ShopHeader numItems={5} total={210}/>
       <Switch>
         <Route path="/Re-store/" exact component={ HomePage }/>
-        <Route path="/Re-store/cart" component={ CartPage }/>
+        <Route path="/Re-store/cart" exact component={ CartPage }/>
       </Switch>
     </main>
   );
