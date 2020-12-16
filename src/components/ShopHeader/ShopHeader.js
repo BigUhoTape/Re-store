@@ -8,12 +8,6 @@ const ShopHeader = ({ numItems, total }) => {
       <Link to="/Re-store/">
         <div className="logo text-dark">ReStore</div>
       </Link>
-      <Link to="/Re-store/cart">
-        <div>
-          <i className="cart-icon fa fa-shopping-cart" />
-          { numItems } items (${ total })
-        </div>
-      </Link>
     </header>
   );
 };
